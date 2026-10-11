@@ -1,3 +1,4 @@
+[![CI/CD](https://github.com/Tiendung3tzz/Visual-SLAM-3D-Explorer/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Tiendung3tzz/Visual-SLAM-3D-Explorer/actions/workflows/ci.yml)
 # Visual SLAM Dashboard
 
 React + FastAPI dashboard for a classical computer-vision visual odometry and 3D reconstruction project. The application turns the existing notebook outputs into a demoable portfolio project while keeping the experimental boundaries explicit:
