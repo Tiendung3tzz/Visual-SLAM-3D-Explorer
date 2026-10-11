@@ -1,0 +1,9 @@
+numpy>=1.24
+opencv-python>=4.8
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+# Optional AI depth inference is in requirements-ai.txt. Replay Mode and
+# regular Railway deployment work without these large packages.
+

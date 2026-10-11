@@ -1,0 +1,21 @@
+{
+  "monocular_tracking_coverage": 0.20692194403534608,
+  "longest_tracked_streak": 111,
+  "lost_reasons": {
+    "pnp_ransac_rejected": 3,
+    "": 1073,
+    "too_few_correspondences": 1
+  },
+  "success_methods": {
+    "flow": 273,
+    "local": 4,
+    "relocalize": 4
+  },
+  "input_mode": "tum_rgb",
+  "frame_step": 1,
+  "camera_profile": "tum_fr1",
+  "initialization_frame": 3,
+  "map_points": 9285,
+  "keyframes": 33,
+  "tracking_attempts": 1358
+}

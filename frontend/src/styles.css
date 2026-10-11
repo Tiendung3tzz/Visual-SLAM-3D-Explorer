@@ -1,0 +1,60 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #e6edf3;
+  background: #0d1117;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 1120px; background: #0d1117; }
+button, select, input { font: inherit; }
+button, select, .file-button { color: #e6edf3; background: #1b2430; border: 1px solid #2c3948; border-radius: 5px; padding: 7px 11px; cursor: pointer; }
+button:hover, select:hover, .file-button:hover { border-color: #27c2b3; }
+
+.app-shell { max-width: 1540px; margin: 0 auto; padding: 16px; }
+.topbar, .toolbar, .panel-header, .timeline { display: flex; align-items: center; }
+.topbar { gap: 18px; padding: 4px 2px 12px; }
+.brand { font-size: 20px; font-weight: 700; letter-spacing: .2px; }
+.subtitle, .panel-hint, .image-meta { color: #7e8da0; font-size: 12px; }
+.subtitle { margin-top: 4px; }
+.source-badge, .status { margin-left: auto; padding: 5px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; letter-spacing: .3px; }
+.source-badge.replay, .status.tracking { color: #27c2b3; background: #123934; }
+.source-badge.live { color: #59a6ff; background: #182f4b; }
+.status.lost { color: #ff6b6b; background: #3e2026; }
+.status.initializing { color: #f3b562; background: #3d2d18; }
+
+.toolbar { gap: 9px; padding: 9px 10px; background: #151b24; border: 1px solid #2c3948; border-radius: 8px; flex-wrap: wrap; }
+.toolbar label:not(.file-button) { color: #7e8da0; font-size: 12px; }
+.toolbar-spacer { flex: 1; }
+.checkbox { display: inline-flex; gap: 5px; align-items: center; color: #e6edf3 !important; }
+.file-button input { display: none; }
+.file-name { color: #27c2b3; font-size: 12px; max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.error-banner { margin-top: 10px; padding: 10px 12px; color: #ffb4b4; background: #3e2026; border: 1px solid #7f3543; border-radius: 6px; font-size: 12px; }
+
+.dashboard-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; margin-top: 10px; }
+.panel { background: #151b24; border: 1px solid #2c3948; border-radius: 8px; min-width: 0; }
+.image-card, .map-card, .trajectory-card { min-height: 310px; padding: 10px; display: flex; flex-direction: column; }
+.panel-header { min-height: 22px; color: #e6edf3; font-size: 11px; font-weight: 700; letter-spacing: .9px; gap: 12px; }
+.panel-hint { margin-left: auto; font-weight: 400; letter-spacing: 0; }
+.video-frame { position: relative; flex: 1; min-height: 240px; margin: 8px 0; overflow: hidden; border-radius: 6px; background: #090c10; }
+.video-frame img, .depth-image { display: block; width: 100%; height: 100%; object-fit: contain; }
+.depth-image { flex: 1; min-height: 240px; margin: 8px 0; border-radius: 6px; background: #090c10; }
+.keypoint { position: absolute; width: 5px; height: 5px; transform: translate(-2px, -2px); border: 1px solid #27c2b3; border-radius: 50%; box-shadow: 0 0 4px #27c2b3; }
+.empty-state { flex: 1; min-height: 240px; display: grid; place-items: center; padding: 30px; margin: 8px 0; color: #7e8da0; background: #090c10; border-radius: 6px; text-align: center; font-size: 13px; }
+.map-canvas { flex: 1; width: 100%; min-height: 250px; margin-top: 8px; border-radius: 6px; touch-action: none; cursor: grab; }
+.map-canvas:active { cursor: grabbing; }
+.map-legend { display: flex; align-items: center; gap: 7px; padding-top: 7px; color: #7e8da0; font-size: 11px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-left: 8px; }.dot:first-child { margin-left: 0; }.dot.blue { background: #59a6ff; }.dot.red { background: #ff6b6b; }.dot.teal { background: #27c2b3; }
+.trajectory-svg { width: 100%; height: 100%; min-height: 250px; margin-top: 8px; }
+.trajectory-empty { min-height: 250px; }
+.image-meta { min-height: 18px; }
+
+.diagnostics-card { margin-top: 10px; padding: 10px; }
+.metrics-grid { display: grid; grid-template-columns: repeat(12, minmax(74px, 1fr)); gap: 10px; padding-top: 12px; }
+.metric { min-width: 0; }.metric span { display: block; color: #7e8da0; font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }.metric strong { display: block; padding-top: 5px; color: #e6edf3; font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.timeline { gap: 12px; padding: 11px 0 2px; color: #7e8da0; font-size: 12px; }.timeline input { flex: 1; accent-color: #27c2b3; }
+
+@media (max-width: 1200px) {
+  body { min-width: 900px; }
+  .metrics-grid { grid-template-columns: repeat(6, minmax(90px, 1fr)); }
+}
