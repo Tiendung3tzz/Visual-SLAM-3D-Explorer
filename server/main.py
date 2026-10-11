@@ -23,7 +23,7 @@ from app.core.models import FrameResult, TrackingStatus
 ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT_ROOT = Path(os.getenv("SLAM_ARTIFACT_DIR", ROOT / "visual_slam_upgrade"))
 UPLOAD_ROOT = Path(os.getenv("UPLOAD_DIR", ROOT / "runtime_uploads"))
-UPLOAD_ROOT.mkdir(exist_ok=True)
+UPLOAD_ROOT.mkdir(parents=True, exist_ok=True)
 
 cors_origins = [item.strip() for item in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if item.strip()]
 cors_regex = os.getenv("CORS_ORIGIN_REGEX") or r"https://.*\.vercel\.app"
