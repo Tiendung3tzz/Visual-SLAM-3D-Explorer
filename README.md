@@ -9,6 +9,7 @@ React + FastAPI dashboard for a classical computer-vision visual odometry and 3D
 - Depth Anything V2 is treated as relative single-frame depth unless metric scale alignment is available.
 
 <img width="967" height="797" alt="image" src="https://github.com/user-attachments/assets/11ad514a-c4c8-41f7-8c27-7c90e3f888fa" />
+<img width="451" height="381" alt="image" src="https://github.com/user-attachments/assets/e38e7fe9-2159-4b8b-b455-59fc9064eb4f" />
 
 
 The preview above uses real RGB, depth, trajectory, and tracking plots extracted from the current notebook. Run the React frontend and FastAPI backend for the interactive 3D viewport and live video path.
@@ -22,8 +23,6 @@ Visual odometry estimates camera motion from image observations. Visual SLAM ext
 **Output:** estimated camera trajectory, sparse 3D landmarks, relative depth visualization, colored point clouds, and tracking diagnostics.
 
 Monocular mode has arbitrary scale and does not use ground truth for tracking. RGB-D mode uses measured sensor depth for metric visual odometry and reserves ground truth for evaluation only.
-<img width="1617" height="616" alt="image" src="https://github.com/user-attachments/assets/afb3cb34-f4b5-424a-8cdd-03274df580ba" />
-<img width="1715" height="587" alt="image" src="https://github.com/user-attachments/assets/a99b4226-b2b9-4bcf-86eb-42cdc8561779" />
 
 ## System architecture
 
