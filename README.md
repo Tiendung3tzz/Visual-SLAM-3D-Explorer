@@ -8,7 +8,7 @@ React + FastAPI dashboard for a classical computer-vision visual odometry and 3D
 - Missing poses remain missing. A `LOST` frame never invents a camera position or trajectory segment.
 - Depth Anything V2 is treated as relative single-frame depth unless metric scale alignment is available.
 
-![Dashboard preview built from the notebook artifacts](assets/screenshots/dashboard_preview.png)
+<img width="957" height="790" alt="image" src="https://github.com/user-attachments/assets/f8895087-1a73-457b-a765-fa9911767d0a" />
 
 The preview above uses real RGB, depth, trajectory, and tracking plots extracted from the current notebook. Run the React frontend and FastAPI backend for the interactive 3D viewport and live video path.
 
