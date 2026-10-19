@@ -9,7 +9,7 @@ React + FastAPI dashboard for a classical computer-vision visual odometry and 3D
 - Depth Anything V2 is treated as relative single-frame depth unless metric scale alignment is available.
 
 <img width="967" height="797" alt="image" src="https://github.com/user-attachments/assets/11ad514a-c4c8-41f7-8c27-7c90e3f888fa" />
-<img width="451" height="381" alt="image" src="https://github.com/user-attachments/assets/e38e7fe9-2159-4b8b-b455-59fc9064eb4f" />
+<img width="957" height="390" alt="image" src="https://github.com/user-attachments/assets/d7a61d63-f964-4c8d-a612-e62ed401511d" />
 
 
 The preview above uses real RGB, depth, trajectory, and tracking plots extracted from the current notebook. Run the React frontend and FastAPI backend for the interactive 3D viewport and live video path.
